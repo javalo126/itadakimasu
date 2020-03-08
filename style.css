@@ -1,3 +1,73 @@
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position:relative;
+  padding-top: 90px;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 90px;
+  height: 20px;
+  text-align: center ;
+  vertical-align: middle;
+  padding: 12px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+	background-color: #1a8cff
+}
+
+.value-button:hover {
+  cursor: pointer;
+	padding:
+}
+
+form #decrease {
+  text-align: center;
+	color:red;
+  border-radius: 8px 0 0 8px; 
+	background-color: #1a8cff
+	
+}
+
+form #increase { 
+	text-align: center;
+	color:green;
+  border-radius: 0 8px 8px 0; 
+	background-color: #1a8cff
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align:center;
+  border: none;
+  margin: 0px; 
+  background-color: #000000; 
+  font-family: 'Fredoka One', cursive;
+  width: 40px; 
+  font-size: 30px;
+  height: 40px; 
+  color:white;  
+  /* above line changes color of number */ 
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} 
 body {
   font-family: 'Fredoka One', cursive;
   background-color: #000000;
@@ -138,18 +208,15 @@ a:active {
 
 /*
 @media(prefers-color-scheme: dark) {
-
   body,
   button {
     background: #222222;
     color: #1a8cff;
   }
-
   a:link,
   a:visited {
     color: #fafafa;
   }
-
   a:hover,
   a:active {
     color: lightseagreen;

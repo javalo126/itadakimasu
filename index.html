@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AnalogCyan/itadakimasu/master/icon.png">
+  
   <title>Itadakimasu</title>
   <meta name="description"
     content="A random recipe password generator, inspired by the Random but Memorable podcast from 1Password.">
@@ -74,28 +71,34 @@
     <p>A random recipe password generator.</p>
   </header>
 
-  <main>
-    <h2>
+  <main>  
+		<h2>
       <div id="pass">
         correct-horse-battery-staple
       </div>
     </h2>
     <br>
-    <br>
-    <button type="button" onclick="pass()">
+		<button type="button" onclick="pass()">
       <h2>
         <div id="gen">Generate Recipe Password</div>
       </h2>
-    </button>
-  </main>
-
-  <footer>
+    </button> 
+		<form>
+   	 <h2>
+      <div class="value-button" id="decrease" onclick="decreaseValue()" 																         value="Decrease Value">-</div> 
+ 		  <input type="number" id="number" value="0" />
+ 		 <div class="value-button" id="increase" onclick="increaseValue()" 										value="Increase Value">+</div>   
+     </h2> 
+		</form>
+     
+    <footer>
     <p>Inspired by episode <a id="pod"
         href="https://randombutmemorable.simplecast.com/episodes/nice-security-hollywood-terror-VPL7w0_R">Nice
         Security Hollywood Terror</a> of Random but Memorable</p>
     <p>Contribute to the food list on <a href="https://github.com/AnalogCyan/itadakimasu">GitHub</a></p>
     <p>Find me on Twitter <a href="https://www.twitter.com/AnalogCyan/">@AnalogCyan</a></p>
-  </footer>
-</body>
-
+  </footer> 
+    
+  </main>
+</body> 
 </html>
