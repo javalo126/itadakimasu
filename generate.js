@@ -16,14 +16,31 @@ function decreaseValue() {
   value--;
   document.getElementById('number').value = value;
 }
+// create array then newValue to it
+var arr = Array;
+function arrPush(string}
+
+  // create array then newValue to it
+
 
 function stringArraySearch(s, k) {
+  var value = parseInt(document.getElementById('number').value, 10);
     for ( int i =0; i < foods.length-1; i++) {
-      for ( int j = 0; j < foods[i]; j++) {
-        
+      //iterates over selected array of strings
+      var newString = "";
+      for ( int j = 0; j < foods[i].length; j++) {
+        //iterates over selected string
+        if (newString.charAt(j) != " " {
+          newString = newString + newString.char(i);
+        }
+      if ( newString.length < value ) {
 
       }
+      else {
+        newString = newString + "";
+      }
     }
+  }
 
 
 
