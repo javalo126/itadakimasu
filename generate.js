@@ -17,34 +17,32 @@ function decreaseValue() {
   document.getElementById('number').value = value;
 }
 // create array then newValue to it
-var arr = Array;
-function arrPush(string}
 
-  // create array then newValue to it
-
+var arr = [" "];
 
 function stringArraySearch(s, k) {
+  var aray = [];
   var value = parseInt(document.getElementById('number').value, 10);
-    for ( int i =0; i < foods.length-1; i++) {
+    for ( var i =0; i < foods.length-1; i++) {
       //iterates over selected array of strings
       var newString = "";
-      for ( int j = 0; j < foods[i].length; j++) {
+      for ( var j = 0; j < foods[i].length; j++) {
+        newString = food[i];
         //iterates over selected string
-        if (newString.charAt(j) != " " {
+        if (newString.charAt(j) != " ") {
           newString = newString + newString.char(i);
         }
-      if ( newString.length < value ) {
-
-      }
-      else {
-        newString = newString + "";
       }
     }
+    if ( newString.length < value ) {
+      arr.push(newString);
+    }
+    else {
+      newString = newString + "";
+    } 
   }
 
 
-
-}
 
 var foods = [
   "alfalfa", "shawarma", "gin", "rum", "tea", "tomago", "beetroot", "tunip", "cardamom", "fried", "boiled", "baked", "steamed", "broiled", "sake", "tequila", "blueberry", "biryani", "clover", "apricot", "pea", "bean", "lentil", "lupin", "mesquite", "carob", "soybean", "peanut", "tamarind", "acorn", "almond", "beech", "candlenut", "cashew", "chestnut", "hazelnut", "pecan", "macadamia", "pistachio", "walnut", "asparagus", "apple", "avacado", "squash", "arugala", "artichoke", "applesauce", "noodle", "cantelope", "tuna", "juice", "sushi", "bruscetta", "bacon", "bagel", "bbq", "bison", "barley", "beer", "bisque", "bluefish", "bread", "broccoli", "buritto", "babaganoosh", "cabbage", "cake", "carrots", "celery", "cheese", "chicken", "catfish", "chips", "chocolate", "chowder", "clam", "coffee", "cookie", "corn", "cupcake", "crab", "curry", "cereal", "chimichanga", "date", "dip", "duck", "dumpling", "donut", "egg", "enchilada", "eggroll", "muffin", "edamame", "eel", "fajita", "falafel", "fish", "fondu", "toast", "garlic", "ginger", "gnocchi", "goose", "granola", "grape", "guacamole", "gumbo", "grits", "cracker", "ham", "halibut", "hamburger", "cheeseburger", "honey", "sugar", "roll", "hummus", "ice", "cream", "stew", "jambalaya", "jelly", "jam", "jerky", "jalapeA�o", "kale", "ketchup", "kiwi", "kingfish", "lobster", "lamb", "linguine", "lasagna", "meatball", "moose", "milk", "milkshake", "ostrich", "pizza", "pepperoni", "pancakes", "quesadilla", "quiche", "reuben", "spinach", "spaghetti", "venison", "waffle", "wine", "yogurt", "ziti", "zucchini", "water", "vodka", "cocktail", "rhubarb", "martini", "watermelon", "melon", "strawberry", "raspberry", "banana", "cherry", "lemon", "plum", "pumpkin", "potato", "eggplant", "onion", "mushroom", "sausage", "steak", "porridge", "rice", "seafood", "cod", "herring", "salmon", "maize", "wheat", "flour", "musturd", "crisp", "syrup", "candy", "dessert", "kebab", "kombucha", "pie", "salad", "letuce", "sandwich", "sauce", "soy", "snack", "raisin", "soup", "cider", "soda", "pop", "alcohol", "lemonade", "marshmallow"
@@ -65,7 +63,7 @@ function starter() {
 }
 
 function pass() {
-  var randFood1 = foods[Math.floor(Math.random() * (foods.length))];
+  var randFood1 = arr[Math.floor(Math.random() * (arr.length))];
   var randFood2 = foods[Math.floor(Math.random() * (foods.length))];
   var randFood3 = foods[Math.floor(Math.random() * (foods.length))];
   var randFood4 = foods[Math.floor(Math.random() * (foods.length))];
