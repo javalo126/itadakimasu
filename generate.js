@@ -33,13 +33,14 @@ function stringArraySearch(s, k) {
           newString = newString + newString.char(i);
         }
       }
+      console.log(newString);
+      if ( newString.length < value ) {
+        arr.push(newString);
+      }
+      else {
+        newString = newString + "";
+      }
     }
-    if ( newString.length < value ) {
-      arr.push(newString);
-    }
-    else {
-      newString = newString + "";
-    } 
   }
 
 
